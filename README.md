@@ -25,6 +25,15 @@ University club organizer, Mainly being developed for NSU-ACMSC with plan to exp
 - Automation of redudent task
 - Get access to Api to access data
 
+## Deployment
+
+To deploy this project on GitHub run
+
+```bash
+  npm run deploy
+```
+
+
 ## Authors
 
 - [IAFahim](https://www.github.com/octokatherine) Md. Ishtiaq Ahamed Fahim 2012518642
