@@ -30,3 +30,12 @@ University club organizer, Mainly being developed for NSU-ACMSC with plan to exp
 - [IAFahim](https://www.github.com/octokatherine) Md. Ishtiaq Ahamed Fahim 2012518642
 - [Mir Faiyaz Hossain ](https://github.com/mir8077faiyaz) Mir Faiyaz Hossain 2011385042
 
+
+## Contributing
+
+Contributions are always welcome!
+
+See `contributing.md` for ways to get started.
+
+Please adhere to this project's `code of conduct`.
+
