@@ -1,17 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
+import Button from "./Login/Button/Button";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-          <p>Noting to see so far shu shu</p>
-          <a href={"https://github.com/IAFahim/uni"} >
-            Development site
-          </a>
-      </header>
+        <Button text={"Login With Google"}></Button>
+        <Button text={"Login With GitHub"}></Button>
     </div>
   );
 }
