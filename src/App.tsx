@@ -1,14 +1,14 @@
 import React from 'react';
-import Button from "./Login/Button/Button";
 import './App.css';
+import Login from "./Components/Login/Login";
+import AppShellMantine from "./Components/AppShell/AppShellMantine";
+import {MantineProvider, Text} from "@mantine/core";
 
 function App() {
-  return (
-    <div className="App">
-        <Button text={"Login With Google"}></Button>
-        <Button text={"Login With GitHub"}></Button>
-    </div>
-  );
+    return (
+        <AppShellMantine/>
+
+    );
 }
 
 export default App;
