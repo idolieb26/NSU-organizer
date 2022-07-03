@@ -10,11 +10,11 @@ function HeaderMantine(props: any) {
                         opened={props.opened}
                         onClick={() => props.setOpened((o: any) => !o)}
                         size="sm"
-                        color={props.theme.colors.red[6]}
+                        color={props.theme.colors.gray[0]}
                         mr="xl"
                     />
                 </MediaQuery>
-                <img src={props.imgSrc} height={props.height} alt={"Uni_logo"}/>
+                <img style={{padding:20}} src={props.imgSrc} height={props.height/1.2} alt={"Uni_logo"}/>
                 <Text color={"white"}>{props.text}</Text>
             </div>
         </Header>
