@@ -5,7 +5,7 @@ import {
     useMantineTheme,
 } from '@mantine/core';
 import NavBarMantine from "./NavBarMantine/NavBarMantine";
-import Three from "../Three/Three";
+import Three3D from "../Three/three3D";
 
 
 export default function AppShellMantine() {
@@ -13,21 +13,18 @@ export default function AppShellMantine() {
     theme.colorScheme = "dark";
     theme.fontFamily = "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji"
 
-
-    const breakpoint: MantineNumberSize = "sm";
-
     const [opened, setOpened] = useState(false);
     return (
         <AppShell
             className="App"
             padding={0}
             styles={{main: {background: "#24292d"}}}
-            navbarOffsetBreakpoint={breakpoint}
+
             fixed navbar={
-                <NavBarMantine breakpoint={breakpoint} opened={opened} text={"Lazy to dev..."}/>
+                <NavBarMantine opened={opened} text={"Lazy to dev..."}/>
             }
         >
-            <Three/>
+            <Three3D/>
         </AppShell>
     );
 }
