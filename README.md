@@ -12,7 +12,7 @@ Website:
 
 ## Tech Stack
 
-**Client:** [React](https://reactjs.org), [ThreeJS](https://threejs.org) , [Mantine](https://mantine.dev)
+**Client:** [React](https://reactjs.org), [ThreeJS](https://threejs.org), [Mantine](https://mantine.dev)
 
 **Server:** [Postgresql](https://www.postgresql.org), [SupaBase](https://supabase.com), [Node](https://nodejs.org)
 
