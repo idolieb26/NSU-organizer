@@ -3,19 +3,19 @@ import { Text } from '@react-three/drei'
 import { Canvas, useThree, useFrame } from '@react-three/fiber'
 
 // @ts-ignore
-function Caption({children} ) {
+function Caption( ) {
     const { width } = useThree((state) => state.viewport)
     return (
         // @ts-ignore
         <Text
-            position={[0, 0, -5]}
+            position={[0, 3, -5]}
             lineHeight={0.8}
             font="/Ki-Medium.ttf"
-            fontSize={width / 2}
+            fontSize={width / 32}
             material-toneMapped={false}
             anchorX="center"
             anchorY="middle">
-            {children}
+            Hi, Mir We have 3D fontss
         </Text>
     )
 }

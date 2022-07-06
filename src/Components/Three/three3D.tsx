@@ -1,7 +1,7 @@
 import React from 'react'
-import { Canvas } from '@react-three/fiber'
+import { Canvas} from '@react-three/fiber'
 import Box from "./Box/Box";
-import {OrbitControls} from "@react-three/drei";
+import {OrbitControls , Text } from "@react-three/drei";
 import Caption from "./Caption/Caption";
 
 function Three3D (){
@@ -11,7 +11,7 @@ function Three3D (){
             <ambientLight />
             <pointLight position={[10, 10, 10]} />
             <Box position={[0, 0, 0]} />
-
+            <Caption/>
         </Canvas>
 );
 }
