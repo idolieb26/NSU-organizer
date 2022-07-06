@@ -1,23 +1,22 @@
 import React from "react";
-import { Text } from '@react-three/drei'
-import { Canvas, useThree, useFrame } from '@react-three/fiber'
+import { Text } from '@react-three/drei';
+import { Canvas, useThree, useFrame, useLoader } from '@react-three/fiber'
 
-// @ts-ignore
-function Caption( ) {
+function CaptionThree(props:any ) {
     const { width } = useThree((state) => state.viewport)
+
     return (
         // @ts-ignore
         <Text
             position={[0, 3, -5]}
             lineHeight={0.8}
-            font="/Ki-Medium.ttf"
             fontSize={width / 32}
             material-toneMapped={false}
             anchorX="center"
             anchorY="middle">
-            Hi, Mir We have 3D fontss
+            {props.text}
         </Text>
     )
 }
 
-export default Caption;
+export default CaptionThree;

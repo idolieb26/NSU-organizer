@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { useFrame } from '@react-three/fiber'
 
-function Box(props: any) {
+function BoxThree(props: any) {
 
     const ref = useRef()
     const [hovered, setHovered] = useState(false)
@@ -24,4 +24,4 @@ function Box(props: any) {
     )
 }
 
-export default Box;
+export default BoxThree;
