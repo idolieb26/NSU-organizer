@@ -5,7 +5,7 @@ function HeaderMantine(props: any) {
     return (
         <Header height={props.height} p="md">
             <div style={{display: 'flex', alignItems: 'center', height: '100%' }}>
-                <MediaQuery largerThan="sm" styles={{display: 'none'}}>
+                <MediaQuery largerThan={props.navbarBreakPoint} styles={{display: 'none'}}>
                     <Burger
                         opened={props.opened}
                         onClick={() => props.setOpened((o: any) => !o)}
