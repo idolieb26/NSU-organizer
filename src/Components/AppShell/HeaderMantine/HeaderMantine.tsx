@@ -1,6 +1,6 @@
 import React from "react";
 import {Burger, Header, MediaQuery, Text} from "@mantine/core";
-
+import imgSrc from './logo192.png'
 function HeaderMantine(props: any) {
     return (
         <Header height={props.height} p="md">
@@ -10,12 +10,12 @@ function HeaderMantine(props: any) {
                         opened={props.opened}
                         onClick={() => props.setOpened((o: any) => !o)}
                         size="sm"
-                        color={props.theme.colors.gray[0]}
+                        color={props.theme.colors.gray[4]}
                         mr="xl"
                     />
                 </MediaQuery>
-                <img style={{padding:20}} src={props.imgSrc} height={props.height/1.2} alt={"Uni_logo"}/>
-                <Text size="xl" color={"white"} weight={700} >{props.text}</Text>
+                <img src={imgSrc} height={props.height} alt={"Uni_logo"}/>
+                <Text style={{padding:10}} size="xl" weight={700} >{props.text}</Text>
             </div>
         </Header>
     )

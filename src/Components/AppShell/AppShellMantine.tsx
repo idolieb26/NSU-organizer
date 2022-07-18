@@ -7,10 +7,9 @@ import {
 import NavBarMantine from "./NavBarMantine/NavBarMantine";
 import HeaderMantine from "./HeaderMantine/HeaderMantine";
 
-
 export default function AppShellMantine() {
     const theme = useMantineTheme();
-    theme.colorScheme = "dark";
+    theme.colorScheme = "light";
     theme.fontFamily = "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji"
     const navbarBreakPoint="sm" as MantineNumberSize;
     const [opened, setOpened] = useState(false);
@@ -18,12 +17,12 @@ export default function AppShellMantine() {
         <AppShell
             className="App"
             padding={0}
-            styles={{main: {background: "#24292d"}}}
+            styles={{main: {background: "#f8f9fa"}}}
             navbarOffsetBreakpoint={navbarBreakPoint}
             fixed navbar={
                 <NavBarMantine opened={opened}  navbarBreakPoint={navbarBreakPoint}  text={"Lazy to dev..."}/>
             }
-            header={<HeaderMantine theme={theme} text={"why"} opened={opened} setOpened={setOpened} navbarBreakPoint={navbarBreakPoint} height={48}/> }
+            header={<HeaderMantine theme={theme} text={"You and I"} opened={opened} setOpened={setOpened} navbarBreakPoint={navbarBreakPoint} height={48}/> }
         >
         </AppShell>
     );
