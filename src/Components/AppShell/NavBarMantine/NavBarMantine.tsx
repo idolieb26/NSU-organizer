@@ -14,6 +14,7 @@ function NavBarMantine(props: any) {
                 <>
                     <ButtonsForNav text={"University"}/>
                     <ButtonsForNav text={"Clubs"}/>
+                    <ButtonsForNav text={"Joined Clubs"}/>
                 </>
             }
             </Navbar.Section>
