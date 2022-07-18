@@ -11,7 +11,10 @@ function NavBarMantine(props: any) {
             width={{sm: 250, md: 275, lg: 300, base: 240}}
             style={{background: "#ffffff"}}>
             <Navbar.Section grow component={ScrollArea} mx="-xs" px="xs" mt="xs">{
-                <ButtonsForNav text={"Clubs"}/>
+                <>
+                    <ButtonsForNav text={"University"}/>
+                    <ButtonsForNav text={"Clubs"}/>
+                </>
             }
             </Navbar.Section>
             <Navbar.Section>{<UserFooter/>}</Navbar.Section>
