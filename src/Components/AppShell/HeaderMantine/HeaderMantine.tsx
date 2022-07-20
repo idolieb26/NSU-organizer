@@ -1,10 +1,12 @@
 import React from "react";
-import {Burger, Header, MediaQuery, Text} from "@mantine/core";
+import {Burger, Header, MediaQuery, Text, Group} from "@mantine/core";
 import imgSrc from './logo192.png'
+import UserFooter from "../NavBarMantine/UserFooter/UserFooter";
+
 function HeaderMantine(props: any) {
     return (
         <Header height={props.height} p="md">
-            <div style={{display: 'flex', alignItems: 'center', height: '100%' }}>
+            <div style={{display: 'flex', alignItems: 'center', height: '100%'}}>
                 <MediaQuery largerThan={props.navbarBreakPoint} styles={{display: 'none'}}>
                     <Burger
                         opened={props.opened}
@@ -14,8 +16,10 @@ function HeaderMantine(props: any) {
                         mr="xl"
                     />
                 </MediaQuery>
+
                 <img src={imgSrc} height={props.height} alt={"Uni_logo"}/>
-                <Text style={{padding:10}} size="xl" weight={700} >{props.text}</Text>
+                <Text p={10} size="xl" weight={700}>{props.text}</Text>
+
             </div>
         </Header>
     )

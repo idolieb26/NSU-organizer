@@ -1,12 +1,49 @@
 import React from 'react';
-import {Image, Text} from "@mantine/core";
+import { Text, UnstyledButton, Group, Avatar, Box} from "@mantine/core";
+import { ChevronRight, ChevronLeft } from 'tabler-icons-react';
 
 function UserFooter(props: any) {
     return (
-        <div className={"UserFooter"}>
-            <Text weight={400}>Md. Ishtiaq Ahamed Fahim 2012518642</Text>
-            <Text weight={200} variant={'link'}>ishtiaq.fahim@northsouth.edu</Text>
-        </div>
+        <Box
+            sx={{
+                paddingTop: props.theme.spacing.sm,
+                borderTop: `1px solid ${
+                    props.theme.colorScheme === 'dark' ? props.theme.colors.dark[4] : props.theme.colors.gray[2]
+                }`,
+            }}
+        >
+            <UnstyledButton
+                sx={{
+                    display: 'block',
+                    width: '100%',
+                    padding: props.theme.spacing.xs,
+                    borderRadius: props.theme.radius.sm,
+                    color: props.theme.colorScheme === 'dark' ? props.theme.colors.dark[0] : props.theme.black,
+
+                    '&:hover': {
+                        backgroundColor:
+                            props.theme.colorScheme === 'dark' ? props.theme.colors.dark[6] : props.theme.colors.gray[0],
+                    },
+                }}
+            >
+                <Group>
+                    <Avatar
+                        src="https://avatars.githubusercontent.com/u/63500913?s=40&v=4"
+                        radius="xl"
+                    />
+                    <Box sx={{ flex: 1 }}>
+                        <Text size="sm" weight={500}>
+                            PRO_GrAMmER
+                        </Text>
+                        <Text color="dimmed" size="xs">
+                            fahimmanowarj5@gmail.com
+                        </Text>
+                    </Box>
+
+                    {props.theme.dir === 'ltr' ? <ChevronRight size={18} /> : <ChevronLeft size={18} />}
+                </Group>
+            </UnstyledButton>
+        </Box>
     );
 }
 

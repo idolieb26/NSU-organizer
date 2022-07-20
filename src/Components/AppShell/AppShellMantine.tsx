@@ -20,7 +20,7 @@ export default function AppShellMantine() {
             styles={{main: {background: "#f8f9fa"}}}
             navbarOffsetBreakpoint={navbarBreakPoint}
             fixed navbar={
-                <NavBarMantine opened={opened}  navbarBreakPoint={navbarBreakPoint}  text={"Lazy to dev..."}/>
+                <NavBarMantine opened={opened}  navbarBreakPoint={navbarBreakPoint}  theme={theme} text={"Lazy to dev..."}/>
             }
             header={<HeaderMantine theme={theme} text={"You and I"} opened={opened} setOpened={setOpened} navbarBreakPoint={navbarBreakPoint} height={48}/> }
         >
