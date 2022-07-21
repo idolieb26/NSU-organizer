@@ -1,5 +1,4 @@
-
-# [uni](https://github.com/IAFahim/uni)
+# <img src="public/logo192.png" alt="logo" width="64"/> [uni](https://github.com/IAFahim/uni)
 
 University club organizer, Mainly being developed for NSU-ACMSC with plan to expand it University level.
 
