@@ -23,6 +23,7 @@ export default function AppShellMantine() {
                 <NavBarMantine opened={opened}  navbarBreakPoint={navbarBreakPoint}  theme={theme} text={"Lazy to dev..."}/>
             }
             header={<HeaderMantine theme={theme} text={"You and I"} opened={opened} setOpened={setOpened} navbarBreakPoint={navbarBreakPoint} height={48}/> }
+
         >
         </AppShell>
     );

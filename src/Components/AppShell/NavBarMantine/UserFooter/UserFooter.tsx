@@ -17,6 +17,7 @@ function UserFooter(props: any) {
                     display: 'block',
                     width: '100%',
                     padding: props.theme.spacing.xs,
+                    paddingBottom: props.theme.spacing.xl,
                     borderRadius: props.theme.radius.sm,
                     color: props.theme.colorScheme === 'dark' ? props.theme.colors.dark[0] : props.theme.black,
 
