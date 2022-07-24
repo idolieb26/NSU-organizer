@@ -46,8 +46,8 @@ const mockdata = [
             { label: 'Task History', link: '/' },
         ],
     },
-    { label: 'Achievement', icon: PresentationAnalytics },
     { label: 'Friends', icon: Friends },
+    { label: 'Achievement', icon: PresentationAnalytics },
     {
         label: 'Settings',
         icon: Adjustments,
