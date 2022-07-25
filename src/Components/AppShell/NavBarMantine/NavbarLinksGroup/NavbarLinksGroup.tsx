@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Group, Box, Collapse, ThemeIcon, Text, UnstyledButton, createStyles } from '@mantine/core';
-import { Icon as TablerIcon, CalendarStats, ChevronLeft, ChevronRight } from 'tabler-icons-react';
+import { Icon as TablerIcon , ChevronLeft, ChevronRight } from 'tabler-icons-react';
 
 const useStyles = createStyles((theme) => ({
     control: {
@@ -88,29 +88,5 @@ export function LinksGroup({ icon: Icon, label, initiallyOpened, links }: LinksG
             </UnstyledButton>
             {hasLinks ? <Collapse in={opened}>{items}</Collapse> : null}
         </>
-    );
-}
-
-const mockdata = {
-    label: 'Releases',
-    icon: CalendarStats,
-    links: [
-        { label: 'Upcoming releases', link: '/' },
-        { label: 'Previous releases', link: '/' },
-        { label: 'Releases schedule', link: '/' },
-    ],
-};
-
-export function NavbarLinksGroup() {
-    return (
-        <Box
-            sx={(theme) => ({
-                minHeight: 220,
-                padding: theme.spacing.md,
-                backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.white,
-            })}
-        >
-            <LinksGroup {...mockdata} />
-        </Box>
     );
 }
