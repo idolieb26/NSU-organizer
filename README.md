@@ -42,7 +42,6 @@ To deploy this project on GitHub run
 ## Authors
 
 - [IAFahim](https://www.github.com/octokatherine) Md. Ishtiaq Ahamed Fahim 2012518642
-- [Mir Faiyaz Hossain ](https://github.com/mir8077faiyaz) Mir Faiyaz Hossain 2011385042
 
 
 ## Contributing
