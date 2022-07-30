@@ -5,12 +5,12 @@ import {
     NavigationProgress,
 
 } from '@mantine/nprogress';
-import {Button} from '@mantine/core';
+
 
 function App() {
     return (
         <>
-            < NavigationProgress/>
+            <NavigationProgress/>
             <AppShellMantine/>
         </>
     );

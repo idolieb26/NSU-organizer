@@ -1,9 +1,10 @@
 import React from 'react';
-import { Text, UnstyledButton, Group, Avatar, Box} from "@mantine/core";
-import { ChevronRight, ChevronLeft } from 'tabler-icons-react';
+import {Text, UnstyledButton, Group, Avatar, Box} from "@mantine/core";
+import {ChevronRight, ChevronLeft} from 'tabler-icons-react';
 
 function UserFooter(props: any) {
     return (
+
         <Box
             sx={{
                 paddingTop: props.theme.spacing.sm,
@@ -32,7 +33,7 @@ function UserFooter(props: any) {
                         src="https://avatars.githubusercontent.com/u/63500913?s=40&v=4"
                         radius="xl"
                     />
-                    <Box sx={{ flex: 1 }}>
+                    <Box sx={{flex: 1}}>
                         <Text size="sm" weight={500}>
                             PRO_GrAMmER
                         </Text>
@@ -41,7 +42,7 @@ function UserFooter(props: any) {
                         </Text>
                     </Box>
 
-                    {props.theme.dir === 'ltr' ? <ChevronRight size={18} /> : <ChevronLeft size={18} />}
+                    {props.theme.dir === 'ltr' ? <ChevronRight size={18}/> : <ChevronLeft size={18}/>}
                 </Group>
             </UnstyledButton>
         </Box>

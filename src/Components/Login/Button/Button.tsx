@@ -2,7 +2,10 @@ import React from 'react';
 
 function Button(props: any) {
     return (
-        <button>{props.text}</button>
+            <a href={"https://rputpzgefrvvxneknacq.supabase.co/auth/v1/authorize?provider=google"}>
+
+            <button type="submit">{props.text}</button>
+            </a>
     );
 }
 
